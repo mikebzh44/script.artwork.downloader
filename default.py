@@ -278,6 +278,7 @@ class Main:
             self.media_item = {'id': currentmedia['id'],
                                'dbid': currentmedia['dbid'],
                                'name': currentmedia['name'],
+                               'file': currentmedia['file'],
                                'path': currentmedia['path'],
                                'art': currentmedia['art'],
                                'mediatype': currentmedia['mediatype'],
@@ -507,6 +508,7 @@ class Main:
                                 'targetdirs': targetdirs,
                                 'media_name': self.media_item['name'],
                                 'mediatype':self.media_item['mediatype'],
+                                'mediafile':self.media_item['file'],
                                 'artwork_string': msg,
                                 'artwork_details': artwork,
                                 'dbid':self.media_item['dbid'],
@@ -546,9 +548,16 @@ class Main:
                                 item['filename'] = (filename % int(artwork['season']))
                         else:
                             item['filename'] = filename
+                        
+                        # if movie prefix enabled
+                        if self.settings.files_movieprefix and item['mediatype'] == 'movie':
+                            item['filename'] =  item['mediafile'] + item['filename']
+                            print item['filename']
+                        
                         for targetdir in item['targetdirs']:
                             item['localfilename'] = os.path.join(targetdir, item['filename']).encode('utf-8')
                             break
+                        
 
                         # Continue
                         if self.mode in ['gui', 'customgui'] and not art_type in ['extrafanart', 'extrathumbs']:
@@ -890,13 +899,15 @@ class MainGui(xbmcgui.WindowXMLDialog):
     def onInit(self):
         try :
             self.img_list = self.getControl(6)
+            self.img_list.controlLeft(self.img_list)
+            self.img_list.controlRight(self.img_list)
             self.getControl(3).setVisible(False)
         except :
             print_exc()
             self.img_list = self.getControl(3)
 
+        self.getControl(5).setVisible(False)
         self.getControl(1).setLabel(__localize__(32015))
-        self.getControl(5).setLabel(__localize__(32027))
 
         for image in self.listing:
             listitem = xbmcgui.ListItem('%s' %(image['generalinfo']))
@@ -917,8 +928,6 @@ class MainGui(xbmcgui.WindowXMLDialog):
             log('# GUI position: %s' % num)
             self.selected_id = self.img_list.getSelectedItem().getLabel2()
             log('# GUI selected image ID: %s' % self.selected_id)
-            self.close()
-        if controlID == 5:
             self.close()
 
     def onFocus(self, controlID):

@@ -243,11 +243,11 @@ msgctxt "#32082"
 msgid "[B]Options for downloading TV Show artwork[/B]"
 msgstr ""
 
-msgctxt "#32083"
-msgid "-"
+msgctxt "#32084"
+msgid "Prefix local artwork files with movie filename"
 msgstr ""
 
-#empty strings from id 32084 to 32090
+#empty strings from id 32083 to 32090
 #Add-on settings: Music section id=32091 to 32100
 
 msgctxt "#32091"

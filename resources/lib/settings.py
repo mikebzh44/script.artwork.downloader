@@ -69,8 +69,10 @@ class settings:
         self.service_runtime        = __addon__.getSetting("service_runtime")
         self.files_overwrite        = __addon__.getSetting("files_overwrite")       == 'true'
         self.files_local            = __addon__.getSetting("files_local")           == 'true'
+        self.files_movieprefix      = __addon__.getSetting("files_movieprefix")     == 'true'
         self.xbmc_caching_enabled   = __addon__.getSetting("xbmc_caching_enabled")  == 'true'
         self.debug_enabled          = __addon__.getSetting("debug_enabled")         == 'true'
+        self.files_movieprefix = True
         self.service_startup        = False
         self.service_enable         = False
         
