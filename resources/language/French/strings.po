@@ -422,15 +422,15 @@ msgstr "Fournisseurs d'images à utiliser"
 
 msgctxt "#32203"
 msgid "The MovieDB"
-msgstr ""
+msgstr "The MovieDB"
 
 msgctxt "#32204"
 msgid "Fanart.tv"
-msgstr ""
+msgstr "Fanart.tv"
 
 msgctxt "#32205"
 msgid "Media-Passion"
-msgstr ""
+msgstr "Media-Passion"
 
 msgctxt "#32206"
 msgid "User"
