@@ -3,7 +3,7 @@
     id="script.artwork.downloader"
     name="Artwork Downloader"
     version="12.0.21"
-    provider-name="Martijn"
+    provider-name="Martijn, Team Media-Passion"
     >
   <requires>
     <import addon="xbmc.python"                 version="2.1.0"/>
