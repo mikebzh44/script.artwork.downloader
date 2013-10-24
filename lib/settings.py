@@ -61,6 +61,12 @@ def get():
                'movie_landscape':          __addon__.getSetting("movie_landscape")        == 'true',
                'movie_banner':             __addon__.getSetting("movie_banner")           == 'true',
 
+               'provider_tmdb':            __addon__.getSetting("provider_tmdb")          == 'true',
+               'provider_fanarttv':        __addon__.getSetting("provider_fanarttv")      == 'true',
+               'provider_mpdk':            __addon__.getSetting("provider_mpdk")          == 'true',
+               'provider_mpdk_user':       __addon__.getSetting("provider_mpdk_user"),
+               'provider_mpdk_password':   __addon__.getSetting("provider_mpdk_password"),
+
                'tvshow_enable':            __addon__.getSetting("tvshow_enable")          == 'true',
                'tvshow_poster':            __addon__.getSetting("tvshow_poster")          == 'true',
                'tvshow_seasonposter':      __addon__.getSetting("tvshow_seasonposter")    == 'true',

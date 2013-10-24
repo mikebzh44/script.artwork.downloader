@@ -16,12 +16,15 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
-
+#import modules
+import sys
 ### import libraries
 from tvdb import TVDBProvider
 from tmdb import TMDBProvider
 from fanarttv import FTV_TVProvider
 from fanarttv import FTV_MovieProvider
+from mpdk import MP_MovieProvider
+__addon__    = ( sys.modules[ '__main__' ].__addon__ )
 
 def get_providers():
     movie_providers = []
@@ -32,8 +35,12 @@ def get_providers():
     tv_providers.append(TVDBProvider())
     tv_providers.append(FTV_TVProvider())
     
-    movie_providers.append(TMDBProvider())
-    movie_providers.append(FTV_MovieProvider())
+    if __addon__.getSetting("provider_tmdb") == 'true':
+        movie_providers.append(TMDBProvider())
+    if __addon__.getSetting("provider_fanarttv") == 'true':
+        movie_providers.append(FTV_MovieProvider())
+    if __addon__.getSetting("provider_mpdk") == 'true':
+        movie_providers.append(MP_MovieProvider())
     
     musicvideo_providers.append(TMDBProvider())
 

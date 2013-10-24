@@ -85,6 +85,18 @@
         <setting label="32132" type="bool"      id="musicvideo_discart"         subsetting="true" enable="eq(-7,true)"  default="false"/>
     </category>
     
+<!-- Plugin settings: Providers -->
+    <category label="32201" id="section_provider">
+        <setting type="sep" />
+        <setting label="32202" type="lsep" />
+        <setting type="sep" />
+        <setting label="32203" type="bool"      id="provider_tmdb"              default="true"/>
+        <setting label="32204" type="bool"      id="provider_fanarttv"          default="true"/>
+        <setting label="32205" type="bool"      id="provider_mpdk"              default="true"/>
+        <setting label="32206" type="text"      id="provider_mpdk_user"         subsetting="true"   default=""  visible="eq(-1,true)" />
+        <setting label="32207" type="text"      id="provider_mpdk_password"     subsetting="true"   default=""  visible="eq(-2,true)"  option="hidden" />
+    </category>
+
 <!-- Plugin settings: Advanced section -->
     <category label="32101" id="section_advanced">
         <setting type="sep" />

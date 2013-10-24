@@ -411,3 +411,31 @@ msgstr "[I]Pour les erreurs, les demandes et les questions générales visitez l
 msgctxt "#32192"
 msgid "[I]  Artwork Downloader thread on the XBMC forum. [/I]"
 msgstr "[I]sujet Artwork Downloader sur le forum XBMC.[/I]"
+
+msgctxt "#32201"
+msgid "Providers"
+msgstr "Fournisseurs"
+
+msgctxt "#32202"
+msgid "Providers of images to use"
+msgstr "Fournisseurs d'images à utiliser"
+
+msgctxt "#32203"
+msgid "The MovieDB"
+msgstr ""
+
+msgctxt "#32204"
+msgid "Fanart.tv"
+msgstr ""
+
+msgctxt "#32205"
+msgid "Media-Passion"
+msgstr ""
+
+msgctxt "#32206"
+msgid "User"
+msgstr "Utilisateur"
+
+msgctxt "#32207"
+msgid "Password"
+msgstr "Mot de passe"
