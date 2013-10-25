@@ -1,8 +1,8 @@
-This script can automaticly download all available artwork for your movies/tvshows in your library.
+This script can automaticly download all available artwork for your movies/tvshows in your library from the Franch Media-Passion database.
 !!Each Movies and TV Show must have it's own subfolder!!
 
 Eden 11.0:
-    The script can now be downloaded from the official repo XBMC-repo (pre-Eden)
+    The script can now be downloaded from the official Passion-XBMC Repo (FRODO)
     This script requires an xbmc nightly build of September 21st or later
 
 
