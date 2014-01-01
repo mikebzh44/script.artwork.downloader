@@ -1,4 +1,7 @@
-[B]12.0.21[/B]
+v12.0.22
+- Fix that some files where never found or downloaded
+
+v12.0.21
 - Fix change image url for TheMovieDB
 
 [B]12.0.20[/B]
