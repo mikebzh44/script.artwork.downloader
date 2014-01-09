@@ -393,8 +393,8 @@ msgid "Add-on authors:"
 msgstr "Auteurs de l'Add-on:"
 
 msgctxt "#32188"
-msgid "[I]paddycarey, Martijn Kaijser, putneyj [/I]"
-msgstr "[I]paddycarey, Martijn Kaijser, putneyj [/I]"
+msgid "[I]paddycarey, Martijn Kaijser, putneyj, team Passion-XBMC [/I]"
+msgstr "[I]paddycarey, Martijn Kaijser, putneyj, team Passion-XBMC [/I]"
 
 msgctxt "#32189"
 msgid "Thanks to:"
@@ -409,8 +409,12 @@ msgid "[I]For bugs, requests or general questions visit the [/I]"
 msgstr "[I]Pour les erreurs, les demandes et les questions générales visitez le[/I]"
 
 msgctxt "#32192"
-msgid "[I]  Artwork Downloader thread on the XBMC forum. [/I]"
-msgstr "[I]sujet Artwork Downloader sur le forum XBMC.[/I]"
+msgid "[I]  Artwork Downloader thread on the Passion-XBMC forum. [/I]"
+msgstr "[I]sujet Artwork Downloader sur le forum Passion-XBMC.[/I]"
+
+msgctxt "#32193"
+msgid "[I]media.passion-xbmc.org/ [/I]"
+msgstr "[I]media.passion-xbmc.org/ [/I]"
 
 msgctxt "#32201"
 msgid "Providers"
