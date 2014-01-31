@@ -14,7 +14,7 @@ __localize__    = ( sys.modules[ '__main__' ].__localize__ )
 __addon__    = ( sys.modules[ '__main__' ].__addon__ )
 
 API_KEY = 'd03eb128a68aa8516355eb054e47a29a'
-API_URL_MOVIE = 'http://passion-xbmc.org/scraper_dev/API/1/Movie.GetArtworks/%s/%s/IMDB/fr/JSON/%s/%s'
+API_URL_MOVIE = 'http://passion-xbmc.org/scraper/API/1/Movie.GetArtworks/%s/%s/IMDB/fr/JSON/%s/%s'
 
 IMAGE_TYPES = ['HDLogos',
                'Posters',
