@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon
     id="script.artwork.downloader"
-    name="Artwork Downloader MP"
-    version="12.0.23"
+    name="Artwork Downloader"
+    version="12.0.24"
     provider-name="Martijn, Team Media-Passion"
     >
   <requires>
