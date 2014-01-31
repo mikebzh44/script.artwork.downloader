@@ -1,3 +1,5 @@
+Always use release version +1 to distinguish our addon from standard one.
+
 [B]12.0.23[/B]
 - Fix multiple text search for disctype in filename and avoiding ac3 dubs to be recognized as 3d (ex. ac3d)
 
